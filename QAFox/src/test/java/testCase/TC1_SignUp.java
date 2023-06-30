@@ -15,6 +15,7 @@ public class TC1_SignUp
 	public void TC1_Method()
 	{
 		System.out.println("TC 1 Method...");
+		System.out.println("TC 1 Method...Again");
 	}
 	
 	
