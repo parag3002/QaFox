@@ -2,6 +2,7 @@ package testCase;
 
 import org.testng.annotations.Test;
 import base.*;
+import utility.ScreenShot;
 
 public class TC1_SignUp extends baseClass
 {
@@ -15,10 +16,7 @@ public class TC1_SignUp extends baseClass
 	@Test
 	public void TC1_Method() throws Exception
 	{
-		System.out.println("TC 1 Method...");
-		System.out.println("TC 1 Method...Again");
-		D.get("https://www.facebook.com");
-		D.manage().window().maximize();
+		//ScreenShot.captureSS();
 		Thread.sleep(4000);
 		
 	}
