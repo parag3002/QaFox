@@ -18,8 +18,8 @@ public class TC1_SignUp extends baseClass
 	
 	}
 	
-	@Test
-	public void TC2_SignUp_method() throws Exception
+
+	public void TC1_SignUp_method() throws Exception
 	{
 		
 	}
