@@ -5,12 +5,13 @@
  
 <classes>
      
-      
-      <class name="testCase.TC1_SignUp"/>
-      
       <!--
-       <class name="testCase.TC1"/>
-       -->
+      <class name="testCase.TC1_SignUp"/>
+      -->
+      
+      
+       <class name="testCase.TC2_Login"/>
+       
        
        <!--
        <class name="testCase.TC1"/>
