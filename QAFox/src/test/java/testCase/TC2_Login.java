@@ -23,7 +23,7 @@ public class TC2_Login extends baseClass
 		D.findElement(By.xpath(L.userPass)).sendKeys(passWord);
 		D.findElement(By.xpath(L.loginCTA)).click();
 		//ScreenShot.captureSS();
-		Thread.sleep(1000);
+		//Thread.sleep(1000);
 		
 	}
 	
