@@ -21,13 +21,13 @@ public class TC2_Login extends baseClass
 	{
 		//ScreenShot.captureSS();
 		
-		D.navigate().to("https://parabank.parasoft.com/parabank/register.htm");
+		D.navigate().to(configReader.readPS("register_parabank"));
 		Thread.sleep(1000);
 		D.findElement(By.xpath(L.userID)).sendKeys(userName);
 		D.findElement(By.xpath(L.userPass)).sendKeys(passWord);
 		D.findElement(By.xpath(L.loginCTA)).click();
 		Thread.sleep(2000);
-		System.out.println("TC1 Testrun Complete.............<<<");
+		System.out.println("Generic Message :: TC1 Testrun Complete.............>><<");
 	}
 	
 }
