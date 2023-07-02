@@ -43,6 +43,26 @@ public class excelDataProvider
 	}
 	
 	
+	
+	@DataProvider(name="dataToTC1_SignUP") // Providing data to TC1
+	public String[][] dataReader_TC1() throws Exception
+	{
+		sheet = workbook.getSheet(configReader.readPS("registerSheet")); // reading sheetName from properties file using user defined static method
+		int totalRow = sheet.getLastRowNum();
+		int totalCol = sheet.getRow(0).getLastCellNum();
+		int i,j;	String arr[][] = new String[totalRow][totalCol];
+		DataFormatter Format = new DataFormatter();
+
+		for(i=1;i<=totalRow;i++)
+		{
+			for(j=0;j<totalCol;j++){
+				arr[i-1][j] = Format.formatCellValue(sheet.getRow(i).getCell(j));}
+		}
+		return arr;
+	}
+	
+	
+	
 	///////////////////////////////////////////////////////////////////////////////////////
 	/*
 	public static void display() throws Exception										//

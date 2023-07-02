@@ -16,7 +16,7 @@ public class TC2_Login extends baseClass
 		L = new Locators_A();
 	}
 	
-	@Test(dataProviderClass = excelDataProvider.class , dataProvider = "dataToTC2" , priority =1)
+	@Test(dataProviderClass = excelDataProvider.class , dataProvider = "dataToTC2" , priority =2)
 	public void TC2_Login_method(String userName , String passWord) throws Exception
 	{
 		//ScreenShot.captureSS();
@@ -27,7 +27,7 @@ public class TC2_Login extends baseClass
 		D.findElement(By.xpath(L.userPass)).sendKeys(passWord);
 		D.findElement(By.xpath(L.loginCTA)).click();
 		Thread.sleep(2000);
-		System.out.println("Generic Message :: TC1 Testrun Complete.............>><<");
+		System.out.println("Generic Message :: TC2 TestRun Complete.............>><<");
 	}
 	
 }
