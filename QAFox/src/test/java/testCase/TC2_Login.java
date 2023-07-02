@@ -1,5 +1,7 @@
 package testCase;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
 
 import base.baseClass;
@@ -17,17 +19,14 @@ public class TC2_Login extends baseClass
 	@Test(dataProviderClass = excelDataProvider.class , dataProvider = "dataToTC2" , priority =1)
 	public void TC2_Login_method(String userName , String passWord) throws Exception
 	{
-		/*
-		D.findElement(By.xpath(L.myAccountText)).click();
-		Thread.sleep(1000);
-		D.findElement(By.xpath(L.loginB)).click();
-		D.findElement(By.xpath(L.userID)).sendKeys(userName);
-		D.findElement(By.xpath(L.userPass)).sendKeys(passWord);
-		D.findElement(By.xpath(L.loginCTA)).click();
 		//ScreenShot.captureSS();
-		//Thread.sleep(1000);
-		 */
 		
+		D.navigate().to("https://parabank.parasoft.com/parabank/register.htm");
+		Thread.sleep(1000);
+		D.findElement(By.xpath("//input[@id='customer.firstName']")).click();
+		D.findElement(By.xpath("//input[@id='customer.firstName']")).sendKeys("ABC");
+		D.findElement(By.xpath("//input[@name='username']")).sendKeys("1234");
+		Thread.sleep(1000);
 	}
 	
 }
