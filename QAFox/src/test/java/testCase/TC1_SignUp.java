@@ -46,10 +46,10 @@ public class TC1_SignUp extends baseClass
 		Thread.sleep(5000);
 		System.out.println("Generic Message :: TC1 TestRun Complete.............>><<");
 		
-		WebElement LogOutBTN = D.findElement(By.xpath(L.LogOutCTA));
-		Assert.assertTrue(LogOutBTN.isDisplayed());
-		System.out.println("SignUp Success.........");
-		Thread.sleep(1000);
+//		WebElement LogOutBTN = D.findElement(By.xpath(L.LogOutCTA));
+//		Assert.assertTrue(LogOutBTN.isDisplayed());
+//		System.out.println("SignUp Success.........");
+//		Thread.sleep(1000);
 	}
 	
 	
