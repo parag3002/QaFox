@@ -23,10 +23,10 @@ public class TC2_Login extends baseClass
 		
 		D.navigate().to("https://parabank.parasoft.com/parabank/register.htm");
 		Thread.sleep(1000);
-		D.findElement(By.xpath("//input[@id='customer.firstName']")).click();
-		D.findElement(By.xpath("//input[@id='customer.firstName']")).sendKeys("ABC");
-		D.findElement(By.xpath("//input[@name='username']")).sendKeys("1234");
-		Thread.sleep(1000);
+		D.findElement(By.xpath(L.userID)).sendKeys(userName);
+		D.findElement(By.xpath(L.userPass)).sendKeys(passWord);
+		D.findElement(By.xpath(L.loginCTA)).click();
+		Thread.sleep(2000);
 	}
 	
 }
