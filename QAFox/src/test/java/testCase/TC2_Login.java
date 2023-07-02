@@ -2,6 +2,7 @@ package testCase;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import base.baseClass;
@@ -26,8 +27,13 @@ public class TC2_Login extends baseClass
 		D.findElement(By.xpath(L.userID)).sendKeys(userName);
 		D.findElement(By.xpath(L.userPass)).sendKeys(passWord);
 		D.findElement(By.xpath(L.loginCTA)).click();
-		Thread.sleep(2000);
+		Thread.sleep(1000);
 		System.out.println("Generic Message :: TC2 TestRun Complete.............>><<");
+		
+		WebElement LogOutBTN = D.findElement(By.xpath(L.LogOutCTA));
+		Assert.assertTrue(LogOutBTN.isDisplayed());
+		System.out.println("Login Success.........");
+		Thread.sleep(1000);
 	}
 	
 }

@@ -23,6 +23,7 @@ public class Locators_A
 	public String bank_ConfNewPass = "//input[@id='repeatedPassword']";
 	public String bank_RegisterCTA = "//input[@value='Register']";
 	
+	public String LogOutCTA = "//li/a[@href='/parabank/logout.htm']";
 	
 	
 }

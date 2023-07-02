@@ -2,6 +2,8 @@ package testCase;
 
 import utility.*;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 import base.*;
 import utility.ScreenShot;
@@ -36,7 +38,7 @@ public class TC1_SignUp extends baseClass
 		D.findElement(By.xpath(L.bank_PhoneNum)).sendKeys(PhoneNo);
 		D.findElement(By.xpath(L.bank_SSN)).sendKeys(SSN_Param);
 		//D.findElement(By.xpath(L.bank_NewUserName)).sendKeys(userNewName);
-		D.findElement(By.xpath(L.bank_NewUserName)).sendKeys(userNewName+DateUserName);
+		D.findElement(By.xpath(L.bank_NewUserName)).sendKeys(userNewName);
 		D.findElement(By.xpath(L.bank_NewPass)).sendKeys(newPWD);
 		D.findElement(By.xpath(L.bank_ConfNewPass)).sendKeys(CnfPWD);
 		Thread.sleep(5000);
@@ -44,6 +46,10 @@ public class TC1_SignUp extends baseClass
 		Thread.sleep(5000);
 		System.out.println("Generic Message :: TC1 TestRun Complete.............>><<");
 		
+		WebElement LogOutBTN = D.findElement(By.xpath(L.LogOutCTA));
+		Assert.assertTrue(LogOutBTN.isDisplayed());
+		System.out.println("SignUp Success.........");
+		Thread.sleep(1000);
 	}
 	
 	
