@@ -26,4 +26,15 @@ public class Locators_A
 	public String LogOutCTA = "//li/a[@href='/parabank/logout.htm']";
 	
 	
+	// RBI Locators
+	
+	public String rbiDropDown = "//select[@id='ddlBankName']";
+	public String rbiBranch = "//input[@id='txtBranch']";
+	public String rbiSubmit = "//input[@id='btnSubmit']";
+	public String rbiIFSCfield = "//span[@id='lblIFSCDetails']";
+	public String rbiAddressfield = "//td/span[@id='lblAddress']";
+	public String rbiBankLink = "//tr/td/a[text()='HSR LAYOUT']";
+//	public String
+	
+	
 }

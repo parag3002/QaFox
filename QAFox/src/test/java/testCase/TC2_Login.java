@@ -20,7 +20,7 @@ public class TC2_Login extends baseClass
 	@Test(dataProviderClass = excelDataProvider.class , dataProvider = "dataToTC2" , priority =2)
 	public void TC2_Login_method(String userName , String passWord) throws Exception
 	{
-		//ScreenShot.captureSS();
+		
 		
 		D.navigate().to(configReader.readPS("register_parabank"));
 		Thread.sleep(1000);
@@ -29,6 +29,7 @@ public class TC2_Login extends baseClass
 		D.findElement(By.xpath(L.loginCTA)).click();
 		Thread.sleep(1000);
 		System.out.println("Generic Message :: TC2 TestRun Complete.............>><<");
+		ScreenShot.captureSS();
 	/*	
 		WebElement LogOutBTN = D.findElement(By.xpath(L.LogOutCTA));
 		Assert.assertTrue(LogOutBTN.isDisplayed());
