@@ -3,11 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testCase.Log4j_Implement">
+      <class name="testCase.ReportListnerTest">
         <methods>
-          <include name="testListnerLogReportFail"/>
+          <include name="startReport"/>
+          <include name="failAssert"/>
+          <include name="endReport"/>
+          <include name="getResult"/>
         </methods>
-      </class> <!-- testCase.Log4j_Implement -->
+      </class> <!-- testCase.ReportListnerTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
