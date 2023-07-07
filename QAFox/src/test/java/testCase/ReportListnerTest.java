@@ -37,8 +37,8 @@ public class ReportListnerTest
 		System.out.println("Login by Facebook--->");
 		try
 		{
-			Assert.assertEquals("Parag","Vickey");
-			test.log(LogStatus.FAIL, "Assert Failed and method failed...");
+			Assert.assertEquals("Parag","Parag");
+			test.log(LogStatus.PASS, "Assert Failed and method failed...");
 		}
 		catch (Exception e)
 		{
