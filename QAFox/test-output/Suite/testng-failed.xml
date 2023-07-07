@@ -10,6 +10,8 @@
         <methods>
           <include name="startReport"/>
           <include name="failAssert"/>
+          <include name="endReport"/>
+          <include name="getResult"/>
         </methods>
       </class> <!-- testCase.ReportListnerTest -->
     </classes>
