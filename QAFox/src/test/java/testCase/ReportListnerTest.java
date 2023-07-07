@@ -37,8 +37,8 @@ public class ReportListnerTest
 		System.out.println("Login by Facebook--->");
 		try
 		{
-			Assert.assertEquals("Parag","Parag");
-			test.log(LogStatus.PASS, "Assert Failed and method failed...");
+			Assert.assertEquals("Parag","Vickey");
+			test.log(LogStatus.FAIL, "Assert Failed and method failed...");
 		}
 		catch (Exception e)
 		{
@@ -53,6 +53,7 @@ public class ReportListnerTest
 		extent = new ExtentReports(System.getProperty("user.dir")+"//test-output//MyExtent.html",true);
 		extent.addSystemInfo("Host Name","local host");
 		extent.addSystemInfo("ENV","QA");
+		extent.addSystemInfo("User","Parag Das");
 		extent.loadConfig(new File(System.getProperty("user.dir")+"//extent-config.xml"));
 		
 	}
