@@ -3,13 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testCase.TC3_IFSC_RBI">
+      <class name="testCase.Log4j_Implement">
         <methods>
-          <include name="tearDown"/>
-          <include name="setup"/>
-          <include name="TC3_method"/>
+          <include name="testListnerLogReportFail"/>
         </methods>
-      </class> <!-- testCase.TC3_IFSC_RBI -->
+      </class> <!-- testCase.Log4j_Implement -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

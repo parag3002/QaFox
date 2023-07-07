@@ -14,11 +14,11 @@ import org.testng.annotations.Test;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 @SuppressWarnings("unused")
-public class baseClass 
+public class baseClass // class name should start with capital letter
 {
 
-	public static FileInputStream FIS;
-	public static  Properties PS;
+	public static FileInputStream FIS; // variable should be start with small
+	public static  Properties PS; // variable name should be meaningful
 	public static WebDriver D;
 	
 	
@@ -40,7 +40,7 @@ public class baseClass
 			D=new ChromeDriver();
 			WebDriverManager.chromedriver().setup();
 			D.get(configReader.readPS("testurl"));
-			D.manage().window().maximize();
+			D.manage().window().maximize(); // code redundancy
 		}
 		if(configReader.readPS("browser").equalsIgnoreCase("edge"))
 		{

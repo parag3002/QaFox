@@ -33,7 +33,7 @@ public class Locators_A
 	public String rbiSubmit = "//input[@id='btnSubmit']";
 	public String rbiIFSCfield = "//span[@id='lblIFSCDetails']";
 	public String rbiAddressfield = "//td/span[@id='lblAddress']";
-	public String rbiBankLink = "//tr/td/a[text()='HSR LAYOUT']";
+	public String rbiBankLink = "//tr/td/a[text()='HSR LAYOUT']"; // has to make dynamic 
 //	public String
 	
 	
