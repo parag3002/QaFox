@@ -3,14 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testCase.ReportListnerTest">
+      <class name="testCase.MercuryTourRegistration">
         <methods>
-          <include name="startReport"/>
-          <include name="failAssert"/>
-          <include name="endReport"/>
-          <include name="getResult"/>
+          <include name="mercuryTourRegistration"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+          <include name="navigateToSignUp"/>
         </methods>
-      </class> <!-- testCase.ReportListnerTest -->
+      </class> <!-- testCase.MercuryTourRegistration -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

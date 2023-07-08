@@ -3,42 +3,30 @@
 
 <suite name="Suite">
 
-	<listeners>
-		
-		<listener class-name="testCase.ListenersClass" />
 
+	<listeners>
+		<listener class-name="testCase.ListenersClass" />
 	</listeners>
+
 
 	<test thread-count="5" name="Test">
 
 		<classes>
-
-			
 			<class name="testCase.TC1_SignUp" />
-			<class
-			name="testCase.TC2_Login" />
-			<class name="testCase.TC3_IFSC_RBI"
-			/>
-		
-
-			<!--
-      		<class name="testCase.TC1_SignUp"/>
-     		 -->
-
+			<class name="testCase.TC2_Login" />
+			<class name="testCase.TC3_IFSC_RBI"/>
 			<class name="testCase.ReportListnerTest">
 				<methods>
 					<include name="passAssert" />
 					<include name="failAssert" />
 					<exclude name="failAssert" />
-				
 				</methods>	
 			</class>
-
-
+			<class name="testCase.MercuryTourRegistration" />
 		</classes>
 
 
-	</test> <!--
-	Test -->
-</suite> <!--
-Suite -->
+	</test> 
+	
+	
+</suite>

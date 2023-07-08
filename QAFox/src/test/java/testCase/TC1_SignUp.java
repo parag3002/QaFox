@@ -51,6 +51,7 @@ public class TC1_SignUp extends baseClass
 		System.out.println("SignUp Success.........");
 		Thread.sleep(1000);
 		*/
+		
 	}
 	
 	
