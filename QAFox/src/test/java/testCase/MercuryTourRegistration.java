@@ -3,6 +3,7 @@ import java.lang.Math;
 
 import org.apache.commons.lang3.RandomStringUtils;
 import org.openqa.selenium.JavascriptExecutor;
+import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
@@ -38,7 +39,9 @@ public class MercuryTourRegistration extends baseClass // Register page all oper
 		locator.setConfirmPassword("1234");
 		Thread.sleep(2000);
 		locator.submitClick();
-		
+		Thread.sleep(2000);
+		Assert.assertTrue(locator.checkSignOn());
+		System.out.println("Mercury Tour Registration Successful ....");
 		//System.out.println(RandomStringUtils.randomAlphabetic(8));
 		
 	}

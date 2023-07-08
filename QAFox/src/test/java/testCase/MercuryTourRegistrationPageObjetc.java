@@ -34,7 +34,7 @@ public class MercuryTourRegistrationPageObjetc extends baseClass// All web-eleme
 	private By password = By.xpath("//input[@name='password']");
 	private By confirmPassword = By.xpath("//input[@name='confirmPassword']");
 	private By submit = By.xpath("//input[@name='submit']");
-	
+	private By signInCTA = By.xpath("//a[normalize-space()='sign-in']");
 	
 
 	public void setfirstName(String first_Name)
@@ -104,6 +104,12 @@ public class MercuryTourRegistrationPageObjetc extends baseClass// All web-eleme
 	public void submitClick()
 	{
 		D.findElement(submit).click();
+	}
+	
+	public boolean checkSignOn()
+	{
+		boolean verifySignOn = D.findElement(signInCTA).isDisplayed();
+		return verifySignOn;
 	}
 	
 }
