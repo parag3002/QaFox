@@ -21,6 +21,27 @@ public class ReportListnerTest
 	ExtentTest test;
 	
 
+	@BeforeTest
+	public void startReport()
+	{
+		extent = new ExtentReports(System.getProperty("user.dir")+"//test-output//MyExtent.html",true);
+		extent.addSystemInfo("Host Name","local host");
+		extent.addSystemInfo("ENV","QA");
+		extent.addSystemInfo("User","Parag Das");
+		extent.loadConfig(new File(System.getProperty("user.dir")+"//extent-config.xml"));
+		System.out.println("Before Method Extent");
+	}
+	
+//	ReportListnerTest()
+//	{
+//		extent = new ExtentReports(System.getProperty("user.dir")+"//test-output//MyExtent.html",true);
+//		extent.addSystemInfo("Host Name","local host");
+//		extent.addSystemInfo("ENV","QA");
+//		extent.addSystemInfo("User","Parag Das");
+//		extent.loadConfig(new File(System.getProperty("user.dir")+"//extent-config.xml"));
+//		System.out.println("Before Method Extent");
+//	}
+	
 	@Test
 	public void passAssert()
 	{
@@ -46,17 +67,25 @@ public class ReportListnerTest
 		}
 	}
 	
+//	@Test
+//	public void setReport(boolean testStatus, String message)
+//	{
+//		testStatus=true; message="SignUp COmpleted in Mercury///";
+//		test=extent.startTest("Report Failed...");
+//		if(testStatus == true)
+//		{
+//			test.log(LogStatus.PASS, message);
+//		}
+//		else if (testStatus==false)
+//		{
+//			test.log(LogStatus.FAIL, message);
+//		}
+//		
+//	}
 	
-	@BeforeTest
-	public void startReport()
-	{
-		extent = new ExtentReports(System.getProperty("user.dir")+"//test-output//MyExtent.html",true);
-		extent.addSystemInfo("Host Name","local host");
-		extent.addSystemInfo("ENV","QA");
-		extent.addSystemInfo("User","Parag Das");
-		extent.loadConfig(new File(System.getProperty("user.dir")+"//extent-config.xml"));
-		
-	}
+	
+	
+
 	
 	@AfterMethod
 	public void getResult(ITestResult result)
@@ -65,6 +94,10 @@ public class ReportListnerTest
 		{
 			test.log(LogStatus.FAIL, result.getThrowable());
 		}
+//		else if(result.getStatus()==ITestResult.SUCCESS)
+//		{
+//			test.log(LogStatus.PASS, result.getThrowable());
+//		}
 		extent.endTest(test);
 	}
 	

@@ -4,6 +4,7 @@ import java.lang.Math;
 import org.apache.commons.lang3.RandomStringUtils;
 import org.openqa.selenium.JavascriptExecutor;
 import org.testng.Assert;
+import org.testng.ITestResult;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
@@ -14,10 +15,12 @@ public class MercuryTourRegistration extends baseClass // Register page all oper
 {
 	
 	MercuryTourRegistrationPageObjetc locator;
+	ReportListnerTest report;
 	
 	MercuryTourRegistration() throws Exception
 	{
 		locator = new MercuryTourRegistrationPageObjetc();
+		report = new ReportListnerTest();
 	}
 	
 	@Test
@@ -43,6 +46,8 @@ public class MercuryTourRegistration extends baseClass // Register page all oper
 		Assert.assertTrue(locator.checkSignOn());
 		System.out.println("Mercury Tour Registration Successful ....");
 		//System.out.println(RandomStringUtils.randomAlphabetic(8));
+		
+		
 		
 	}
 	
