@@ -2,16 +2,19 @@
 <testng-results ignored="0" total="6" passed="5" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-07-08T22:45:47 IST" name="Suite" finished-at="2023-07-08T22:46:38 IST" duration-ms="51223">
+  <suite started-at="2023-07-14T21:02:26 IST" name="Suite" finished-at="2023-07-14T21:03:21 IST" duration-ms="54540">
     <groups>
+      <group name="regression">
+        <method signature="TC1_SignUp.TC1_SignUp_method(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:testCase.TC1_SignUp@27f981c6]" name="TC1_SignUp_method" class="testCase.TC1_SignUp"/>
+      </group> <!-- regression -->
     </groups>
-    <test started-at="2023-07-08T22:45:47 IST" name="Test" finished-at="2023-07-08T22:46:38 IST" duration-ms="51223">
+    <test started-at="2023-07-14T21:02:26 IST" name="Test" finished-at="2023-07-14T21:03:21 IST" duration-ms="54540">
       <class name="testCase.TC1_SignUp">
-        <test-method is-config="true" signature="setup()[pri:0, instance:testCase.TC1_SignUp@27f981c6]" started-at="2023-07-08T22:45:47 IST" name="setup" finished-at="2023-07-08T22:45:54 IST" duration-ms="6560" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testCase.TC1_SignUp@27f981c6]" started-at="2023-07-14T21:02:27 IST" name="setup" finished-at="2023-07-14T21:02:35 IST" duration-ms="8829" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="TC1_SignUp_method(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:testCase.TC1_SignUp@27f981c6]" started-at="2023-07-08T22:45:54 IST" name="TC1_SignUp_method" data-provider="dataToTC1_SignUP" finished-at="2023-07-08T22:46:07 IST" duration-ms="13327" status="PASS">
+        <test-method signature="TC1_SignUp_method(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:testCase.TC1_SignUp@27f981c6]" started-at="2023-07-14T21:02:35 IST" name="TC1_SignUp_method" data-provider="dataToTC1_SignUP" finished-at="2023-07-14T21:02:48 IST" duration-ms="12765" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -72,17 +75,17 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC1_SignUp_method -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCase.TC1_SignUp@27f981c6]" started-at="2023-07-08T22:46:07 IST" name="tearDown" finished-at="2023-07-08T22:46:07 IST" duration-ms="149" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCase.TC1_SignUp@27f981c6]" started-at="2023-07-14T21:02:48 IST" name="tearDown" finished-at="2023-07-14T21:02:48 IST" duration-ms="207" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- testCase.TC1_SignUp -->
       <class name="testCase.TC2_Login">
-        <test-method is-config="true" signature="setup()[pri:0, instance:testCase.TC2_Login@60099951]" started-at="2023-07-08T22:46:07 IST" name="setup" finished-at="2023-07-08T22:46:09 IST" duration-ms="1912" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testCase.TC2_Login@60099951]" started-at="2023-07-14T21:02:48 IST" name="setup" finished-at="2023-07-14T21:02:52 IST" duration-ms="3830" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="TC2_Login_method(java.lang.String,java.lang.String)[pri:2, instance:testCase.TC2_Login@60099951]" started-at="2023-07-08T22:46:09 IST" name="TC2_Login_method" data-provider="dataToTC2" finished-at="2023-07-08T22:46:13 IST" duration-ms="4379" status="PASS">
+        <test-method signature="TC2_Login_method(java.lang.String,java.lang.String)[pri:2, instance:testCase.TC2_Login@60099951]" started-at="2023-07-14T21:02:52 IST" name="TC2_Login_method" data-provider="dataToTC2" finished-at="2023-07-14T21:02:56 IST" duration-ms="3671" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -98,49 +101,49 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC2_Login_method -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCase.TC2_Login@60099951]" started-at="2023-07-08T22:46:13 IST" name="tearDown" finished-at="2023-07-08T22:46:14 IST" duration-ms="163" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCase.TC2_Login@60099951]" started-at="2023-07-14T21:02:56 IST" name="tearDown" finished-at="2023-07-14T21:02:56 IST" duration-ms="137" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- testCase.TC2_Login -->
       <class name="testCase.TC3_IFSC_RBI">
-        <test-method is-config="true" signature="setup()[pri:0, instance:testCase.TC3_IFSC_RBI@64beebb7]" started-at="2023-07-08T22:46:14 IST" name="setup" finished-at="2023-07-08T22:46:16 IST" duration-ms="2466" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testCase.TC3_IFSC_RBI@64beebb7]" started-at="2023-07-14T21:02:56 IST" name="setup" finished-at="2023-07-14T21:03:00 IST" duration-ms="3652" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="TC3_method()[pri:3, instance:testCase.TC3_IFSC_RBI@64beebb7]" started-at="2023-07-08T22:46:16 IST" name="TC3_method" finished-at="2023-07-08T22:46:24 IST" duration-ms="8296" status="PASS">
+        <test-method signature="TC3_method()[pri:3, instance:testCase.TC3_IFSC_RBI@64beebb7]" started-at="2023-07-14T21:03:00 IST" name="TC3_method" finished-at="2023-07-14T21:03:09 IST" duration-ms="8740" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC3_method -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCase.TC3_IFSC_RBI@64beebb7]" started-at="2023-07-08T22:46:24 IST" name="tearDown" finished-at="2023-07-08T22:46:25 IST" duration-ms="184" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCase.TC3_IFSC_RBI@64beebb7]" started-at="2023-07-14T21:03:09 IST" name="tearDown" finished-at="2023-07-14T21:03:09 IST" duration-ms="216" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- testCase.TC3_IFSC_RBI -->
       <class name="testCase.MercuryTourRegistration">
-        <test-method is-config="true" signature="setup()[pri:0, instance:testCase.MercuryTourRegistration@4fad94a7]" started-at="2023-07-08T22:46:25 IST" name="setup" finished-at="2023-07-08T22:46:29 IST" duration-ms="4207" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testCase.MercuryTourRegistration@4fad94a7]" started-at="2023-07-14T21:03:09 IST" name="setup" finished-at="2023-07-14T21:03:11 IST" duration-ms="2451" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="navigateToSignUp()[pri:0, instance:testCase.MercuryTourRegistration@4fad94a7]" started-at="2023-07-08T22:46:29 IST" name="navigateToSignUp" finished-at="2023-07-08T22:46:32 IST" duration-ms="2808" status="PASS">
+        <test-method is-config="true" signature="navigateToSignUp()[pri:0, instance:testCase.MercuryTourRegistration@4fad94a7]" started-at="2023-07-14T21:03:11 IST" name="navigateToSignUp" finished-at="2023-07-14T21:03:14 IST" duration-ms="3232" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- navigateToSignUp -->
-        <test-method signature="mercuryTourRegistration()[pri:0, instance:testCase.MercuryTourRegistration@4fad94a7]" started-at="2023-07-08T22:46:32 IST" name="mercuryTourRegistration" finished-at="2023-07-08T22:46:37 IST" duration-ms="5795" status="PASS">
+        <test-method signature="mercuryTourRegistration()[pri:0, instance:testCase.MercuryTourRegistration@4fad94a7]" started-at="2023-07-14T21:03:14 IST" name="mercuryTourRegistration" finished-at="2023-07-14T21:03:20 IST" duration-ms="5791" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- mercuryTourRegistration -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCase.MercuryTourRegistration@4fad94a7]" started-at="2023-07-08T22:46:37 IST" name="tearDown" finished-at="2023-07-08T22:46:38 IST" duration-ms="252" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCase.MercuryTourRegistration@4fad94a7]" started-at="2023-07-14T21:03:20 IST" name="tearDown" finished-at="2023-07-14T21:03:20 IST" duration-ms="178" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- testCase.MercuryTourRegistration -->
       <class name="testCase.ReportListnerTest">
-        <test-method is-config="true" signature="startReport()[pri:0, instance:testCase.ReportListnerTest@7813cb11]" started-at="2023-07-08T22:45:47 IST" name="startReport" finished-at="2023-07-08T22:45:47 IST" duration-ms="107" status="PASS">
+        <test-method is-config="true" signature="startReport()[pri:0, instance:testCase.ReportListnerTest@7813cb11]" started-at="2023-07-14T21:02:26 IST" name="startReport" finished-at="2023-07-14T21:02:26 IST" duration-ms="185" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startReport -->
-        <test-method signature="failAssert()[pri:0, instance:testCase.ReportListnerTest@7813cb11]" started-at="2023-07-08T22:46:25 IST" name="failAssert" finished-at="2023-07-08T22:46:25 IST" duration-ms="4" status="FAIL">
+        <test-method signature="failAssert()[pri:0, instance:testCase.ReportListnerTest@7813cb11]" started-at="2023-07-14T21:03:09 IST" name="failAssert" finished-at="2023-07-14T21:03:09 IST" duration-ms="8" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [Vickey] but found [Parag]]]>
@@ -188,7 +191,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- failAssert -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:testCase.ReportListnerTest@7813cb11]" started-at="2023-07-08T22:46:25 IST" name="getResult" finished-at="2023-07-08T22:46:25 IST" duration-ms="7" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:testCase.ReportListnerTest@7813cb11]" started-at="2023-07-14T21:03:09 IST" name="getResult" finished-at="2023-07-14T21:03:09 IST" duration-ms="5" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -199,11 +202,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method signature="passAssert()[pri:0, instance:testCase.ReportListnerTest@7813cb11]" started-at="2023-07-08T22:46:25 IST" name="passAssert" finished-at="2023-07-08T22:46:25 IST" duration-ms="1" status="PASS">
+        <test-method signature="passAssert()[pri:0, instance:testCase.ReportListnerTest@7813cb11]" started-at="2023-07-14T21:03:09 IST" name="passAssert" finished-at="2023-07-14T21:03:09 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- passAssert -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:testCase.ReportListnerTest@7813cb11]" started-at="2023-07-08T22:46:25 IST" name="getResult" finished-at="2023-07-08T22:46:25 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:testCase.ReportListnerTest@7813cb11]" started-at="2023-07-14T21:03:09 IST" name="getResult" finished-at="2023-07-14T21:03:09 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -214,7 +217,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method is-config="true" signature="endReport()[pri:0, instance:testCase.ReportListnerTest@7813cb11]" started-at="2023-07-08T22:46:38 IST" name="endReport" finished-at="2023-07-08T22:46:38 IST" duration-ms="174" status="PASS">
+        <test-method is-config="true" signature="endReport()[pri:0, instance:testCase.ReportListnerTest@7813cb11]" started-at="2023-07-14T21:03:20 IST" name="endReport" finished-at="2023-07-14T21:03:21 IST" duration-ms="237" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endReport -->

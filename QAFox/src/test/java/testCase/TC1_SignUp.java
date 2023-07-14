@@ -22,7 +22,7 @@ public class TC1_SignUp extends baseClass
 	}
 	
 	
-	@Test(dataProviderClass = excelDataProvider.class , dataProvider = "dataToTC1_SignUP" , priority =1)
+	@Test(dataProviderClass = excelDataProvider.class , dataProvider = "dataToTC1_SignUP" , priority =1 , groups="regression")
 	public void TC1_SignUp_method(String fName, String Lname, String AdRes, String CTY, String STAT, String ZPCode, String PhoneNo, String SSN_Param, String userNewName, String newPWD, String CnfPWD) throws Exception
 	{
 		Date DT = new Date();
